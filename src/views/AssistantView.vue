@@ -59,8 +59,8 @@ const router = useRouter()
 // ═══════════════════════════════════════════════════════════
 //  ⚙️  AI 后端接入配置  —— 以后只需要改这两个常量！
 // ═══════════════════════════════════════════════════════════
-const AI_ENABLED = false          // 接入时改成 true
-const AI_API_BASE = ''            // 例如 'https://ai.example.com'
+const AI_ENABLED = true          // 接入时改成 true
+const AI_API_BASE = 'https://kinsman-possibly-refinery.ngrok-free.dev'            // 例如 'https://ai.example.com'
 const AI_CHAT_PATH = '/api/v1/chat/completions'
 // ═══════════════════════════════════════════════════════════
 
@@ -80,7 +80,7 @@ const quickQuestions = [
 const messages = ref([
   {
     role: 'ai',
-    text: '👋 你好，我是校园通识AI智慧体。\n\n⏳ 当前状态：等待接入 AI 后端\n\n接口对接完成后，我就能回答报到、军训、宿舍、奖学金、图书馆、教务等校园问题，并且会标注答案出处。'
+    text: '👋 你好，我是校园通识AI智慧体。\n接口对接完成后，我就能回答报到、军训、宿舍、奖学金、图书馆、教务等校园问题，并且会标注答案出处。'
   }
 ])
 
